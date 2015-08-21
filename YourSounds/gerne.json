@@ -1,0 +1,309 @@
+{
+    "categories" : [
+					{
+						"name" : { "default" : "iTunes Top 100" },
+						"id" : "iTunesTop100",
+						"source" : "itunes"
+                    },
+                    {
+                        "name" : { "default" : "Alternative" },
+                        "id" : "20",
+                        "source" : "itunes"
+                    },
+                    {
+                        "name" : { "default" : "Ambient" },
+                        "id" : "1056",
+                        "source" : "itunes"
+                    },
+                    {
+                        "name" : { "default" : "Arabic" },
+                        "id" : "1197",
+                        "source" : "itunes"
+                    },
+					{
+						"name" : { "default" : "Blues" },
+						"id" : "2",
+						"source" : "itunes"
+                    },
+                    {
+                        "name" : { "default" : "Brazilian" },
+                        "id" : "1122",
+                        "source" : "itunes"
+                    },
+                    {
+                        "name" : { "default" : "Britpop" },
+                        "id" : "1132",
+                        "source" : "itunes"
+                    },
+                    {
+                        "name" : { "default" : "Children's Music" },
+                        "id" : "4",
+                        "source" : "itunes"
+                    },
+					{
+						"name" : { "default" : "Christian & Gospel" },
+						"id" : "22",
+						"source" : "itunes"
+                    },
+					{
+						"name" : { "default" : "Classical" },
+						"id" : "5",
+						"source" : "itunes"
+                    },
+                    {
+                        "name" : { "default" : "Classical Crossover" },
+                        "id" : "1022",
+                        "source" : "itunes"
+                    },
+                    {
+                        "name" : { "default" : "Contemporary Blues" },
+                        "id" : "1010",
+                        "source" : "itunes"
+                    },
+                    {
+                        "name" : { "default" : "Contemporary Christian" },
+                        "id" : "1094",
+                        "source" : "itunes"
+                    },
+					{
+						"name" : { "default" : "Country" },
+						"id" : "6",
+						"source" : "iTunes"
+                    },
+                    {
+						"name" : { "default" : "Dance" },
+						"id" : "17",
+						"source" : "itunes"
+                    },
+                    {
+                        "name" : { "default" : "Death Metal/Black Metal" },
+                        "id" : "1149",
+                        "source" : "itunes"
+                    },
+                    {
+                        "name" : { "default" : "Disco" },
+                        "id" : "1137",
+                        "source" : "itunes"
+                    },
+                    {
+                        "name" : { "default" : "Downtempo" },
+                        "id" : "1057",
+                        "source" : "itunes"
+                    },
+                    {
+                        "name" : { "default" : "Dubstep" },
+                        "id" : "100014",
+                        "source" : "itunes"
+                    },
+                    {
+                        "name" : { "default" : "Easy Listening" },
+                        "id" : "25",
+                        "source" : "itunes"
+                    },
+                    {
+                        "name" : { "default" : "Electronic" },
+                        "id" : "7",
+                        "source" : "itunes"
+                    },
+                    {
+                        "name" : { "default" : "Fitness & Workout" },
+                        "id" : "50",
+                        "source" : "itunes"
+                    },
+                    {
+                        "name" : { "default" : "Folk" },
+                        "id" : "1289",
+                        "source" : "itunes"
+                    },
+                    {
+                        "name" : { "default" : "Folk-Rock" },
+                        "id" : "1065",
+                        "source" : "itunes"
+                    },
+                    {
+                        "name" : { "default" : "French Pop" },
+                        "id" : "50000064",
+                        "source" : "itunes"
+                    },
+                    {
+                        "name" : { "default" : "Funk" },
+                        "id" : "1139",
+                        "source" : "itunes"
+                    },
+                    {
+                        "name" : { "default" : "Hard Rock" },
+                        "id" : "1152",
+                        "source" : "itunes"
+                    },
+                    {
+                        "name" : { "default" : "Hardcore" },
+                        "id" : "1047",
+                        "source" : "itunes"
+                    },
+                    {
+                        "name" : { "default" : "Hip-Hop/Rap" },
+                        "id" : "18",
+                        "source" : "itunes"
+                    },
+                    {
+                        "name" : { "default" : "House" },
+                        "id" : "1048",
+                        "source" : "itunes"
+                    },
+                    {
+                        "name" : { "default" : "Indian" },
+                        "id" : "1262",
+                        "source" : "itunes"
+                    },
+                    {
+                        "name" : { "default" : "Indie Rock" },
+                        "id" : "1004",
+                        "source" : "itunes"
+                    },
+                    {
+                        "name" : { "default" : "Industrial" },
+                        "id" : "1061",
+                        "source" : "itunes"
+                    },
+                    {
+                        "name" : { "default" : "Instrumental" },
+                        "id" : "53",
+                        "source" : "itunes"
+                    },
+                    {
+						"name" : { "default" : "Jazz" },
+						"id" : "11",
+						"source" : "itunes"
+                    },
+                    {
+                        "name" : { "default" : "Jungle/Drum'n'bass" },
+                        "id" : "1049",
+                        "source" : "itunes"
+                    },
+                    {
+                        "name" : { "default" : "Latin Urban" },
+                        "id" : "1119",
+                        "source" : "itunes"
+                    },
+                    {
+                        "name" : { "default" : "Latino" },
+                        "id" : "12",
+                        "source" : "itunes"
+                    },
+                    {
+                        "name" : { "default" : "Mainstream Jazz" },
+                        "id" : "1112",
+                        "source" : "itunes"
+                    },
+                    {
+                        "name" : { "default" : "Metal" },
+                        "id" : "1153",
+                        "source" : "itunes"
+                    },
+                    {
+                        "name" : { "default" : "New Age" },
+                        "id" : "13",
+                        "source" : "itunes"
+                    },
+                    {
+                        "name" : { "default" : "New Wave" },
+                        "id" : "1005",
+                        "source" : "itunes"
+                    },
+                    {
+                        "name" : { "default" : "Pop" },
+                        "id" : "14",
+                        "source" : "itunes"
+                    },
+                    {
+                        "name" : { "default" : "Pop in Spanish" },
+                        "id" : "1117",
+                        "source" : "itunes"
+                    },
+                    {
+                        "name" : { "default" : "Prog-Rock/Art Rock" },
+                        "id" : "1155",
+                        "source" : "itunes"
+                    },
+                    {
+                        "name" : { "default" : "Punk" },
+                        "id" : "1006",
+                        "source" : "itunes"
+                    },
+                    {
+                        "name" : { "default" : "R&B/Soul" },
+                        "id" : "15",
+                        "source" : "itunes"
+                    },
+                    {
+                        "name" : { "default" : "Reggae" },
+                        "id" : "24",
+                        "source" : "itunes"
+                    },
+					{
+						"name" : { "default" : "Rock" },
+						"id" : "21",
+						"source" : "itunes"
+                    },
+                    {
+                        "name" : { "default" : "Rock & Roll" },
+                        "id" : "1157",
+                        "source" : "itunes"
+                    },
+                    {
+                        "name" : { "default" : "Salsa & Tropical" },
+                        "id" : "1124",
+                        "source" : "itunes"
+                    },
+					{
+						"name" : { "default" : "Singer/Songwriter" },
+						"id" : "10",
+						"source" : "itunes"
+                    },
+                    {
+                        "name" : { "default" : "Ska" },
+                        "id" : "1194",
+                        "source" : "itunes"
+                    },
+                    {
+                        "name" : { "default" : "Soul" },
+                        "id" : "1143",
+                        "source" : "itunes"
+                    },
+					{
+						"name" : { "default" : "Soundtrack" },
+						"id" : "16",
+						"source" : "itunes"
+                    },
+                    {
+                        "name" : { "default" : "Swing" },
+                        "id" : "1055",
+                        "source" : "itunes"
+                    },
+                    {
+                        "name" : { "default" : "Tango" },
+                        "id" : "1296",
+                        "source" : "itunes"
+                    },
+                    {
+                        "name" : { "default" : "Techno" },
+                        "id" : "1050",
+                        "source" : "itunes"
+                    },
+                    {
+                        "name" : { "default" : "Trance" },
+                        "id" : "1051",
+                        "source" : "itunes"
+                    },
+                    {
+                        "name" : { "default" : "Vocal" },
+                        "id" : "23",
+                        "source" : "itunes"
+                    },
+                    {
+						"name" : { "default" : "World" },
+						"id" : "19",
+						"source" : "itunes"
+                    }
+    ]
+}
