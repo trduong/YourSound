@@ -1,14 +1,14 @@
 //
-//  GerneViewController.h
+//  Gerne+Json.h
 //  YourSounds
 //
 //  Created by Duong Nguyen on 8/21/15.
 //  Copyright (c) 2015 Duong Nguyen. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-#import <Realm/Realm.h>
+#import "Gerne.h"
 
-@interface GerneViewController : UITableViewController
+@interface Gerne (Json)
++(Gerne *) gerneFromDict:(NSDictionary *)gerneDictionary;
 
 @end

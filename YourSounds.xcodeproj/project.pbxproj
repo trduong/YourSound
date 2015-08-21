@@ -18,6 +18,7 @@
 		C4678B8C1B8780F100D4AC2D /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4678B8B1B8780F100D4AC2D /* Realm.framework */; };
 		C4678B8E1B87811200D4AC2D /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C4678B8D1B87811200D4AC2D /* libc++.dylib */; };
 		C4678B901B87A13C00D4AC2D /* gerne.json in Resources */ = {isa = PBXBuildFile; fileRef = C4678B8F1B87A13C00D4AC2D /* gerne.json */; };
+		C4678B931B87B2A500D4AC2D /* Gerne+Json.m in Sources */ = {isa = PBXBuildFile; fileRef = C4678B921B87B2A500D4AC2D /* Gerne+Json.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,8 @@
 		C4678B8B1B8780F100D4AC2D /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
 		C4678B8D1B87811200D4AC2D /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
 		C4678B8F1B87A13C00D4AC2D /* gerne.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = gerne.json; sourceTree = "<group>"; };
+		C4678B911B87B2A500D4AC2D /* Gerne+Json.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Gerne+Json.h"; sourceTree = "<group>"; };
+		C4678B921B87B2A500D4AC2D /* Gerne+Json.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Gerne+Json.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +141,8 @@
 			children = (
 				C4678B871B877C8200D4AC2D /* Gerne.h */,
 				C4678B881B877C8200D4AC2D /* Gerne.m */,
+				C4678B911B87B2A500D4AC2D /* Gerne+Json.h */,
+				C4678B921B87B2A500D4AC2D /* Gerne+Json.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -256,6 +261,7 @@
 				C4678B5A1B877AB800D4AC2D /* main.m in Sources */,
 				C4678B841B877B5400D4AC2D /* GerneViewController.m in Sources */,
 				C4678B891B877C8200D4AC2D /* Gerne.m in Sources */,
+				C4678B931B87B2A500D4AC2D /* Gerne+Json.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

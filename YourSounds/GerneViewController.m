@@ -7,7 +7,7 @@
 //
 
 #import "GerneViewController.h"
-
+#import "Gerne+Json.h"
 @interface GerneViewController ()
 
 @end
@@ -21,12 +21,16 @@
     NSString *j = [[NSString alloc]initWithData:jsonData encoding:NSUTF8StringEncoding];
     NSData *jdata =[j dataUsingEncoding:NSUTF8StringEncoding];//utf_8
     NSDictionary *json =[NSJSONSerialization JSONObjectWithData:jdata options:NSJSONReadingMutableContainers error:nil];
-    NSLog(@"%@",json);
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    RLMRealm *realm = [RLMRealm defaultRealm];
+    NSArray *gerneArray = [json objectForKey:@"categories"];
+    for (int i = 0; i< [gerneArray count];i++) {
+        Gerne * gerne = [Gerne gerneFromDict:[gerneArray objectAtIndex:i]];
+        gerne.index = i+1;
+        [realm beginWriteTransaction];
+        [Gerne createOrUpdateInRealm:realm withValue:gerne];
+        [realm commitWriteTransaction];
+    }
+
 }
 
 - (void)didReceiveMemoryWarning {
