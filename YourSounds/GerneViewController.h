@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import <Realm/Realm.h>
 
+int(^howmuch)(int a,int b);
 @interface GerneViewController : UITableViewController
-
 @end

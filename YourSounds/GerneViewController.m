@@ -8,14 +8,17 @@
 
 #import "GerneViewController.h"
 #import "Gerne+Json.h"
-@interface GerneViewController ()
+@interface GerneViewController (){
+
+    RLMResults *gernes;
+}
 
 @end
 
 @implementation GerneViewController
-
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     NSString *jsonPath =[[NSBundle mainBundle] pathForResource:@"gerne" ofType:@"json"];
     NSData *jsonData = [NSData dataWithContentsOfFile:jsonPath];
     NSString *j = [[NSString alloc]initWithData:jsonData encoding:NSUTF8StringEncoding];
@@ -30,9 +33,13 @@
         [Gerne createOrUpdateInRealm:realm withValue:gerne];
         [realm commitWriteTransaction];
     }
-
+    [self arrayGerneFromRealm];
 }
-
+-(RLMResults *)arrayGerneFromRealm{
+    
+    gernes = [Gerne allObjects];
+    return gernes;
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -41,26 +48,23 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    return [gernes count];
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"GerneCell" forIndexPath:indexPath];
+    Gerne *gerne = [gernes objectAtIndex:indexPath.row];
+    cell.textLabel.text =gerne.gerneName;
     // Configure the cell...
-    
     return cell;
 }
-*/
 
 /*
 // Override to support conditional editing of the table view.
