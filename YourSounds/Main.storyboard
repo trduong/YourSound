@@ -39,10 +39,10 @@
             </objects>
             <point key="canvasLocation" x="1761" y="500"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Details Gerne View Controller-->
         <scene sceneID="LcC-R4-xfv">
             <objects>
-                <tableViewController id="M8r-1c-YQn" sceneMemberID="viewController">
+                <tableViewController id="M8r-1c-YQn" customClass="DetailsGerneViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="evV-S8-GCm">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

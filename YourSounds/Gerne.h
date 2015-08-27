@@ -13,5 +13,6 @@
 @property NSInteger index;
 @property NSString *gerneName;
 @property NSString *gerneID;
++(Gerne *) gerneFromDict:(NSDictionary *)gerneDictionary;
 
 @end

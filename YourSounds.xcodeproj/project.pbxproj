@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C45461991B8F69DA00269DA4 /* DetailsGerne.m in Sources */ = {isa = PBXBuildFile; fileRef = C45461981B8F69DA00269DA4 /* DetailsGerne.m */; };
+		C454619C1B8F839B00269DA4 /* DetailsGerneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C454619B1B8F839B00269DA4 /* DetailsGerneViewController.m */; };
 		C4678B5A1B877AB800D4AC2D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C4678B591B877AB800D4AC2D /* main.m */; };
 		C4678B5D1B877AB800D4AC2D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C4678B5C1B877AB800D4AC2D /* AppDelegate.m */; };
 		C4678B681B877AB800D4AC2D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4678B671B877AB800D4AC2D /* Images.xcassets */; };
@@ -18,7 +20,6 @@
 		C4678B8C1B8780F100D4AC2D /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4678B8B1B8780F100D4AC2D /* Realm.framework */; };
 		C4678B8E1B87811200D4AC2D /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C4678B8D1B87811200D4AC2D /* libc++.dylib */; };
 		C4678B901B87A13C00D4AC2D /* gerne.json in Resources */ = {isa = PBXBuildFile; fileRef = C4678B8F1B87A13C00D4AC2D /* gerne.json */; };
-		C4678B931B87B2A500D4AC2D /* Gerne+Json.m in Sources */ = {isa = PBXBuildFile; fileRef = C4678B921B87B2A500D4AC2D /* Gerne+Json.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +33,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C45461971B8F69DA00269DA4 /* DetailsGerne.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailsGerne.h; sourceTree = "<group>"; };
+		C45461981B8F69DA00269DA4 /* DetailsGerne.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailsGerne.m; sourceTree = "<group>"; };
+		C454619A1B8F839B00269DA4 /* DetailsGerneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailsGerneViewController.h; sourceTree = "<group>"; };
+		C454619B1B8F839B00269DA4 /* DetailsGerneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailsGerneViewController.m; sourceTree = "<group>"; };
 		C4678B541B877AB800D4AC2D /* YourSounds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YourSounds.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4678B581B877AB800D4AC2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C4678B591B877AB800D4AC2D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -50,8 +55,6 @@
 		C4678B8B1B8780F100D4AC2D /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
 		C4678B8D1B87811200D4AC2D /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
 		C4678B8F1B87A13C00D4AC2D /* gerne.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = gerne.json; sourceTree = "<group>"; };
-		C4678B911B87B2A500D4AC2D /* Gerne+Json.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Gerne+Json.h"; sourceTree = "<group>"; };
-		C4678B921B87B2A500D4AC2D /* Gerne+Json.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Gerne+Json.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,8 +144,8 @@
 			children = (
 				C4678B871B877C8200D4AC2D /* Gerne.h */,
 				C4678B881B877C8200D4AC2D /* Gerne.m */,
-				C4678B911B87B2A500D4AC2D /* Gerne+Json.h */,
-				C4678B921B87B2A500D4AC2D /* Gerne+Json.m */,
+				C45461971B8F69DA00269DA4 /* DetailsGerne.h */,
+				C45461981B8F69DA00269DA4 /* DetailsGerne.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -152,6 +155,8 @@
 			children = (
 				C4678B821B877B5400D4AC2D /* GerneViewController.h */,
 				C4678B831B877B5400D4AC2D /* GerneViewController.m */,
+				C454619A1B8F839B00269DA4 /* DetailsGerneViewController.h */,
+				C454619B1B8F839B00269DA4 /* DetailsGerneViewController.m */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -260,8 +265,9 @@
 				C4678B5D1B877AB800D4AC2D /* AppDelegate.m in Sources */,
 				C4678B5A1B877AB800D4AC2D /* main.m in Sources */,
 				C4678B841B877B5400D4AC2D /* GerneViewController.m in Sources */,
+				C454619C1B8F839B00269DA4 /* DetailsGerneViewController.m in Sources */,
 				C4678B891B877C8200D4AC2D /* Gerne.m in Sources */,
-				C4678B931B87B2A500D4AC2D /* Gerne+Json.m in Sources */,
+				C45461991B8F69DA00269DA4 /* DetailsGerne.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

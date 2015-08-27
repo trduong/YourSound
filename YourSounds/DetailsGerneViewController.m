@@ -1,45 +1,29 @@
 //
-//  GerneViewController.m
+//  DetailsGerneViewController.m
 //  YourSounds
 //
-//  Created by Duong Nguyen on 8/21/15.
+//  Created by Duong Nguyen on 8/27/15.
 //  Copyright (c) 2015 Duong Nguyen. All rights reserved.
 //
 
-#import "GerneViewController.h"
-#import "Gerne.h"
-@interface GerneViewController (){
+#import "DetailsGerneViewController.h"
 
-    RLMResults *gernes;
-}
+@interface DetailsGerneViewController ()
 
 @end
 
-@implementation GerneViewController
+@implementation DetailsGerneViewController
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSString *jsonPath =[[NSBundle mainBundle] pathForResource:@"gerne" ofType:@"json"];
-    NSData *jsonData = [NSData dataWithContentsOfFile:jsonPath];
-    NSString *j = [[NSString alloc]initWithData:jsonData encoding:NSUTF8StringEncoding];
-    NSData *jdata =[j dataUsingEncoding:NSUTF8StringEncoding];//utf_8
-    NSDictionary *json =[NSJSONSerialization JSONObjectWithData:jdata options:NSJSONReadingMutableContainers error:nil];
-    RLMRealm *realm = [RLMRealm defaultRealm];
-    NSArray *gerneArray = [json objectForKey:@"categories"];
-    for (int i = 0; i< [gerneArray count];i++) {
-        Gerne * gerne = [Gerne gerneFromDict:[gerneArray objectAtIndex:i]];
-        gerne.index = i+1;
-        [realm beginWriteTransaction];
-        [Gerne createOrUpdateInRealm:realm withValue:gerne];
-        [realm commitWriteTransaction];
-    }
-    [self arrayGerneFromRealm];
-}
--(RLMResults *)arrayGerneFromRealm{
+    // Uncomment the following line to preserve selection between presentations.
+    // self.clearsSelectionOnViewWillAppear = NO;
     
-    gernes = [Gerne allObjects];
-    return gernes;
+    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -48,23 +32,26 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+#warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 1;
+    return 0;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return [gernes count];
+    return 0;
 }
 
-
+/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"GerneCell" forIndexPath:indexPath];
-    Gerne *gerne = [gernes objectAtIndex:indexPath.row];
-    cell.textLabel.text =gerne.gerneName;
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    
     // Configure the cell...
+    
     return cell;
 }
+*/
 
 /*
 // Override to support conditional editing of the table view.
