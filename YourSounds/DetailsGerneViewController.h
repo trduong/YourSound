@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "AFNetworking/AFNetworking.h"
 @interface DetailsGerneViewController : UITableViewController
-
+@property (strong,nonatomic) NSString *gerneId;
 @end

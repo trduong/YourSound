@@ -8,6 +8,7 @@
 
 #import "GerneViewController.h"
 #import "Gerne.h"
+#import "DetailsGerneViewController.h"
 @interface GerneViewController (){
 
     RLMResults *gernes;
@@ -62,7 +63,6 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"GerneCell" forIndexPath:indexPath];
     Gerne *gerne = [gernes objectAtIndex:indexPath.row];
     cell.textLabel.text =gerne.gerneName;
-    // Configure the cell...
     return cell;
 }
 
@@ -99,7 +99,10 @@
     return YES;
 }
 */
-
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSLog(@"%s", __PRETTY_FUNCTION__);
+    //[self performSegueWithIdentifier:@"SEGUE_TWO" sender:indexPath];
+}
 
 #pragma mark - Navigation
 
@@ -107,6 +110,13 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    if ([segue.identifier isEqualToString:@"SEGUE_TWO"]) {
+
+    DetailsGerneViewController *vc = [segue destinationViewController];
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        Gerne *currentGerne = [gernes objectAtIndex:indexPath.row];
+        vc.gerneId = currentGerne.gerneID;
+    }
 }
 
 

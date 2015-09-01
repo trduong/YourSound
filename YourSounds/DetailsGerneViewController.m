@@ -13,7 +13,7 @@
 @end
 
 @implementation DetailsGerneViewController
-
+@synthesize gerneId;
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -28,7 +28,16 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+-(void)viewWillAppear:(BOOL)animated{
+    NSString *urlString = [NSString stringWithFormat:@"http://itunes.apple.com/us/rss/topsongs/limit=100/genre=%@/json",gerneId];
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    [manager GET:urlString parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        NSLog(@"JSON: %@", responseObject);
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        NSLog(@"Error: %@", error);
+    }];
 
+}
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
